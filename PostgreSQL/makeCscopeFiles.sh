@@ -12,10 +12,7 @@ find ./ \( -path ./test -prune -o \
 		   -path ./utilities -prune -o \
 		   -path ./client -prune -o \
 		   -path ./components -prune -o \
-		   -path ./pgsql -prune -o \
+		   -path ./pgsql -prune \
 		   \) -o -regextype posix-extended -regex '.*\.(h|c|cc|hpp|cpp|pl|tcc)$' -print > cscope.files
 
 cscope -q -i cscope.files 
-
-# ctags
-ctags -R ./
