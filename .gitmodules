@@ -1,0 +1,6 @@
+[submodule "DuckDB/duckdb"]
+	path = DuckDB/duckdb
+	url = https://github.com/duckdb/duckdb.git
+[submodule "PostgreSQL/postgres"]
+	path = PostgreSQL/postgres
+	url = https://github.com/postgres/postgres.git
