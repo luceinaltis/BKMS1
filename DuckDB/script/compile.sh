@@ -20,7 +20,7 @@ sudo apt-get install -y git g++ cmake ninja-build libssl-dev
 # Compile the DuckDB
 if [ ${BUILD} == "DEBUG" ]
 then
-	BUILD_TPCH=1 DUCKDB_PLATFORM=${PLATFORM} GEN=ninja make debug -j
+	DUCKDB_PLATFORM=${PLATFORM} GEN=ninja make debug -j
 else
-	BUILD_TPCH=1 DUCKDB_PLATFORM=${PLATFORM} GEN=ninja make release -j
+	DUCKDB_PLATFORM=${PLATFORM} GEN=ninja make release -j
 fi
